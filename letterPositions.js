@@ -18,9 +18,7 @@ const assertArraysEqual = function(arr1, arr2) {
 // ACTUAL FUNCTION
 const letterPositions = function(sentence) {
   const results = {};
-  // logic to update results here
   let splitSentence = sentence.split("")
-  console.log(splitSentence);
   for (let i = 0; i < splitSentence.length; i++) {
     if (!results[splitSentence[i]]) {
       results[splitSentence[i]] = [i]
@@ -35,4 +33,5 @@ const letterPositions = function(sentence) {
 
 console.log(letterPositions('hello'));
 console.log(letterPositions('heeeee'));
-
+assertArraysEqual(letterPositions("hello").e, [1]);
+assertArraysEqual(letterPositions("hello").l, [2, 3]);
