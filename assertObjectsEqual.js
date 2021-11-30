@@ -1,3 +1,5 @@
+const assertArraysEqual = require('./assertArraysEqual');
+
 const eqArrays = function(arr1, arr2) {
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
@@ -32,3 +34,5 @@ const assertObjectsEqual = function(actual, expected) {
     console.log(`✅✅✅Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`);
   }
 };
+
+module.exports = assertArraysEqual;

@@ -28,12 +28,14 @@ const map = function(array, callback) {
   return results;
 }
 
-const mapWords = map(words, word => word[0]);
-console.log(mapWords);
+// const mapWords = map(words, word => word[0]);
+// console.log(mapWords);
 
-const mapWords2 = map(words2, word => word[0]);
-const mapWords3 = map(words3, word => word[2]);
+// const mapWords2 = map(words2, word => word[0]);
+// const mapWords3 = map(words3, word => word[2]);
 
-assertArraysEqual(mapWords, [ 'g', 'c', 't', 'm', 't' ])
-assertArraysEqual(mapWords2, [ 'h', 'h'])
-assertArraysEqual(mapWords3, [ 'N' ])
+// assertArraysEqual(mapWords, [ 'g', 'c', 't', 'm', 't' ])
+// assertArraysEqual(mapWords2, [ 'h', 'h'])
+// assertArraysEqual(mapWords3, [ 'N' ])
+
+module.exports = map;

@@ -23,7 +23,9 @@ const countLetters = function(str) {
 };
 
 // TEST CODE
-console.log(countLetters('hello my name'));
-console.log(countLetters('    '));
-console.log(countLetters('aaaaa'));
-console.log(countLetters("lighthouse in the house"));
+// console.log(countLetters('hello my name'));
+// console.log(countLetters('    '));
+// console.log(countLetters('aaaaa'));
+// console.log(countLetters("lighthouse in the house"));
+
+module.exports = countLetters;
